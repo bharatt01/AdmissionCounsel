@@ -154,7 +154,7 @@ const team = [
   {
     name: "Mrs. K. Radhika",
     title: "Proprietor",
-    bio: "Founded StarEducational Consultancy with a mission to make quality guidance accessible to every Indian family.",
+    bio: "Founded Admission Counsel with a mission to make quality guidance accessible to every Indian family.",
   },
 ];
 
@@ -640,7 +640,7 @@ export default function Home() {
               <GraduationCap className="h-5 w-5" />
             </div>
             <span className="truncate text-base font-bold tracking-tight sm:text-lg">
-              StarEducational Consultancy
+              Admission Counsel
             </span>
           </a>
           <nav className="hidden items-center gap-6 lg:flex">
@@ -704,7 +704,7 @@ export default function Home() {
               <span className="text-sky-500">Education Journey</span>
             </h1>
             <p className="mt-5 max-w-xl text-base text-slate-500 sm:text-lg">
-              StarEducational Consultancy is an end-to-end educational service provider — admissions, career counseling,
+              Admission Counsel is an end-to-end educational service provider — admissions, career counseling,
               study abroad, documentation, research guidance and more. One team, one point of
               contact, from your first question to your first day on campus.
             </p>
@@ -722,7 +722,7 @@ export default function Home() {
             <div className="absolute -inset-4 rounded-3xl bg-amber-300/20 blur-2xl" aria-hidden />
             <img
               src={heroImage}
-              alt="StarEducational Consultancy counselor guiding students"
+              alt="Admission Counsel counselor guiding students"
               width={1400}
               height={1000}
               className="relative rounded-3xl border border-slate-200 shadow-xl object-cover"
@@ -744,13 +744,13 @@ export default function Home() {
       <section id="about" className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
         <div className="text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-amber-600">
-            About StarEducational Consultancy
+            About Admission Counsel
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
             A bridge between students and the right institutions
           </h2>
           <p className="mt-5 text-base text-slate-500 sm:text-lg">
-            StarEducational Consultancy exists to help students and families make confident,
+            Admission Counsel exists to help students and families make confident,
             informed choices about their education. We aren't a college — we're the honest,
             experienced partner that sits beside you through admissions, documentation, transcripts,
             research support and career planning. With offices across Andhra Pradesh, our team
@@ -1518,10 +1518,10 @@ stage—from choosing the right course to successfully beginning your academic j
               <div className="flex gap-3">
                 <Mail className="h-5 w-5 shrink-0 text-sky-500" />
                 <a
-                  href="mailto:hello@stareducation.in"
+                  href="mailto:hello@admissioncounsel.com"
                   className="text-sm text-slate-800 hover:text-sky-500"
                 >
-                  hello@stareducation.in
+                  hello@admissioncounsel.com
                 </a>
               </div>
               <div className="flex gap-3 pt-2">
@@ -1554,7 +1554,7 @@ stage—from choosing the right course to successfully beginning your academic j
               <div className="grid h-9 w-9 place-items-center rounded-xl bg-sky-500 text-white">
                 <GraduationCap className="h-5 w-5" />
               </div>
-              <span className="font-bold">StarEducational Consultancy</span>
+              <span className="font-bold">Admission Counsel</span>
             </div>
             <p className="mt-3 text-sm text-slate-500">
               Your trusted partner for admissions, study abroad and career guidance.
@@ -1584,14 +1584,14 @@ stage—from choosing the right course to successfully beginning your academic j
             <h4 className="text-sm font-semibold">Contact</h4>
             <ul className="mt-3 space-y-2 text-sm text-slate-500">
               <li>+91 90000 00000</li>
-              <li>hello@stareducation.in</li>
+              <li>hello@admissioncounsel.com</li>
               <li>Visakhapatnam · Vijayawada · Guntur</li>
             </ul>
           </div>
         </div>
         <div className="border-t border-slate-200 py-5">
           <p className="text-center text-xs text-slate-500">
-            © {new Date().getFullYear()} StarEducational Consultancy. All rights reserved.
+            © {new Date().getFullYear()} Admission Counsel. All rights reserved.
           </p>
         </div>
       </footer>
