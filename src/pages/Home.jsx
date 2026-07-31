@@ -45,8 +45,9 @@ import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 const heroImage =
   "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1400&auto=format&fit=crop";
 
-const WHATSAPP_URL = "https://wa.me/919000000000";
-
+const WHATSAPP_URL = "https://wa.me/919266885450";
+const whatsappLink =
+  "https://wa.me/919266885450?text=Hi,%20I%20would%20like%20to%20book%20a%20free%20consultation.";
 /* ---------------------------------------------------------------------- */
 /*  Content                                                                */
 /* ---------------------------------------------------------------------- */
@@ -83,10 +84,7 @@ const advantages = [
   { icon: ShieldCheck, title: "Experienced Leadership", desc: "A leadership team with over a decade of hands-on admissions and documentation experience." },
 ];
 
-const foundingTeam = [
-  { name: "D. Venkata Rao", title: "Manager", bio: "Leads student counseling and university partnerships with over a decade in admissions." },
-  { name: "Mrs. K. Radhika", title: "Proprietor", bio: "Founded Admission Counsel with a mission to make quality guidance accessible to every Indian family." },
-];
+
 
 const testimonials = [
   { name: "Aman Sharma", course: "Meerut, Uttar Pradesh | MBBS Admission", quote: "The counsellors at Admission Counsel guided me throughout the entire admission process. From choosing the right college to completing documentation, everything was handled professionally. Their support made my admission journey completely stress-free.", rating: 5 },
@@ -434,18 +432,25 @@ export default function Home() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
-            <Button as="a" href="#enquire" className="hidden sm:inline-flex">
-              Book Free Consultation
-            </Button>
-            <button
-              className="grid h-10 w-10 place-items-center rounded-lg text-slate-700 hover:bg-slate-100 lg:hidden"
-              onClick={() => setMenuOpen((v) => !v)}
-              aria-label="Toggle menu"
-            >
-              {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </button>
-          </div>
+       <div className="flex items-center gap-2">
+  <Button
+    as="a"
+    href={whatsappLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hidden sm:inline-flex"
+  >
+    Book Free Consultation
+  </Button>
+
+  <button
+    className="grid h-10 w-10 place-items-center rounded-lg text-slate-700 hover:bg-slate-100 lg:hidden"
+    onClick={() => setMenuOpen((v) => !v)}
+    aria-label="Toggle menu"
+  >
+    {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+  </button>
+</div>
         </div>
 
         {menuOpen && (
@@ -760,23 +765,7 @@ export default function Home() {
             </Card>
           ))}
 
-          {foundingTeam.map((member) => (
-            <Card key={member.name} className="flex flex-col gap-5 p-7 hover:shadow-md">
-              <div className="flex items-center gap-4">
-                <div className="grid h-14 w-14 shrink-0 place-items-center rounded-xl bg-amber-50 text-lg font-bold text-amber-700">
-                  {member.name.split(" ").map((w) => w[0]).slice(0, 2).join("")}
-                </div>
-                <div className="min-w-0">
-                  <h3 className="text-base font-bold text-slate-900">{member.name}</h3>
-                  <p className="text-sm font-medium text-amber-700">{member.title}</p>
-                </div>
-              </div>
-              <span className="w-fit rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700">
-                Founding Team
-              </span>
-              <p className="text-sm leading-6 text-slate-600">{member.bio}</p>
-            </Card>
-          ))}
+         
         </div>
 
         <div className="mt-12 rounded-2xl bg-sky-600 px-8 py-12 text-center text-white sm:px-12">
