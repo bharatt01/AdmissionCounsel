@@ -34,7 +34,7 @@ import {
   Stethoscope,
 } from "lucide-react";
 import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
-
+import logo from "../assets/logo.jpg"; // adjust the path
 /**
  * Admission Counsel — Home page
  * Plain React + Tailwind CSS.
@@ -42,6 +42,7 @@ import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
  * All original content preserved; layout rebuilt for consistency,
  * symmetry and mobile responsiveness.
  */
+
 const heroImage =
   "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1400&auto=format&fit=crop";
 
@@ -122,6 +123,19 @@ const nav = [
   { href: "#testimonials", label: "Testimonials" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
+];
+const socialLinks = [
+  {
+    icon: FaFacebook,
+    href: "https://www.facebook.com/Admissioncounsel24/",
+    label: "Facebook",
+  },
+  {
+    icon: FaInstagram,
+    href: "https://www.instagram.com/admissioncounsel24/?hl=en",
+    label: "Instagram",
+  },
+
 ];
 
 const programmes = [
@@ -413,20 +427,25 @@ export default function Home() {
       )}
 
       {/* NAV */}
-      <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-          <a href="#home" className="flex min-w-0 items-center gap-2.5">
-            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-sky-600 text-white">
-              <GraduationCap className="h-5 w-5" />
-            </span>
-            <span className="truncate text-base font-bold tracking-tight text-slate-900 sm:text-lg">
-              Admission Counsel
-            </span>
-          </a>
+     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
+  <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+ 
+    <a href="#home" className="flex min-w-0 items-center gap-2.5">
+  <img
+    src={logo}
+    alt="Admission Counsel Logo"
+    className="h-16 w-auto shrink-0"
+  />
+
+ 
+</a>
+
+
+
 
           <nav className="hidden items-center gap-7 lg:flex">
             {nav.map((n) => (
-              <a key={n.href} href={n.href} className="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">
+              <a key={n.href} href={n.href} className="text-md font-medium text-slate-600 transition-colors hover:text-sky-600">
                 {n.label}
               </a>
             ))}
@@ -1055,18 +1074,20 @@ export default function Home() {
                 </span>
               </a>
 
-              <div className="flex gap-3 pt-2">
-                {[FaFacebook, FaInstagram, FaLinkedin, FaTwitter].map((I, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    aria-label="social"
-                    className="grid h-10 w-10 place-items-center rounded-full bg-slate-100 text-slate-600 transition-colors hover:bg-sky-600 hover:text-white"
-                  >
-                    <I className="h-4 w-4" />
-                  </a>
-                ))}
-              </div>
+             <div className="flex gap-3 pt-2">
+  {socialLinks.map(({ icon: Icon, href, label }) => (
+    <a
+      key={label}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      className="grid h-10 w-10 place-items-center rounded-full bg-slate-100 text-slate-600 transition-colors hover:bg-sky-600 hover:text-white"
+    >
+      <Icon className="h-4 w-4" />
+    </a>
+  ))}
+</div>
             </div>
           </div>
 
