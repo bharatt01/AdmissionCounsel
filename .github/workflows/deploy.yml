@@ -22,8 +22,7 @@ jobs:
       - name: 📦 Install Dependencies
         run: npm ci
 
-      - name: 📋 Copy .htaccess into dist
-        run: cp .htaccess dist/.htaccess
+
 
       - name: 🏗️ Build Vite Project
         run: npm run build
