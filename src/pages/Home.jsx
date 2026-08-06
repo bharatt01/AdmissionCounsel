@@ -128,7 +128,7 @@ const socialLinks = [
   {
     icon: FaFacebook,
     href: "https://www.facebook.com/Admissioncounsel24/",
-    label: "Facebook",
+    label: "Facebookk",
   },
   {
     icon: FaInstagram,
